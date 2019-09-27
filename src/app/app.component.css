@@ -7,12 +7,11 @@
     width: 4vh !important;
     height: 4vh !important;
     border: solid DarkSeaGreen;   
-    max-width: 4vh !important;
-    max-height: 4vh !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
 
     display: table-cell;
-    
-    overflow: hidden;
+    float: none;
 }
 .start {
     background: green;
@@ -29,9 +28,6 @@
 .map-container {
     text-align: center;
     overflow: auto;
-
-    margin: 80px auto 0;
-    width: 980px;
 }
 
 .btn-group {
@@ -42,13 +38,10 @@
     background: lightgreen;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-
-    top: 0%;
-    height: 70px;
+.nav {
+  position: fixed;
 }
+
 
 .finalPath {
     background: white;
@@ -70,5 +63,4 @@
 
 table {
     display: inline-block;
-    table-layout: fixed;
 }
