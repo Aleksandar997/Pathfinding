@@ -1,0 +1,74 @@
+.cell{
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    width: 4vh !important;
+    height: 4vh !important;
+    border: solid DarkSeaGreen;   
+    max-width: 4vh !important;
+    max-height: 4vh !important;
+
+    display: table-cell;
+    
+    overflow: hidden;
+}
+.start {
+    background: green;
+}
+
+.end {
+    background: red !important;
+}
+
+.wall {
+    background: grey !important;
+    color: white;
+}
+.map-container {
+    text-align: center;
+    overflow: auto;
+
+    margin: 80px auto 0;
+    width: 980px;
+}
+
+.btn-group {
+    margin-bottom: 20px;
+}
+
+.surroundings {
+    background: lightgreen;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+
+    top: 0%;
+    height: 70px;
+}
+
+.finalPath {
+    background: white;
+    animation-name: finalPathAnimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes finalPathAnimation {
+    from {background: white;}
+    to {background-color: black;}
+  }
+
+
+  @keyframes pathAnimation {
+    from {background: lightgreen;}
+    to {background-color: greenyellow;}
+  }
+
+table {
+    display: inline-block;
+    table-layout: fixed;
+}

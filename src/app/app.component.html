@@ -1,0 +1,26 @@
+<div class="navbar d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="font-weight-normal">Pathfinder</h5>
+  <form style="display: inline-flex;">
+      <input style="text-align: center;" [(ngModel)]="map.mapWidth" name="width" type="number" 
+      class="form-control" aria-label="Text input with segmented dropdown button" (ngModelChange)="map.setDimensions()">
+      <h5 style="padding: 5px;">X</h5>
+      <input style="text-align: center;" [(ngModel)]="map.mapHeight" name="height" type="number" 
+      class="form-control" aria-label="Text input with segmented dropdown button" (ngModelChange)="map.setDimensions()">
+  </form>
+  <form class="form-inline">
+      
+    <button type="button" style="margin-right: 20px;" class="btn btn-primary mr-6"
+      (click)="reset()">Reset</button>
+    <button type="button" style="margin-right: 20px;" class="btn btn-primary mr-6"
+      (click)="start()">Calculate</button>
+  </form>
+</div>
+<div class="map-container">
+  <table>
+    <tr *ngFor="let row of map.rows">
+      <td id="{{cell.y}}-{{cell.x}}" class="cell {{cell.isStartCell ? 'start' : (cell.isFinishCell ? 'end' : '')}}" 
+      *ngFor="let cell of row" (click)="onCellClick(cell)" (mouseover)="onMouseOver(cell, $event)">
+      </td>
+    </tr>
+  </table>
+</div>
