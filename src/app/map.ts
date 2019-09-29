@@ -32,7 +32,7 @@ export class Map {
     }
 
     async setDimensions() {
-        if (!this.rows || !this.mapWidth || !this.mapHeight) {
+        if (!this.rows || !this.mapWidth || !this.mapHeight || this.mapWidth < 1 || this.mapHeight < 1) {
             return;
         }
         await this.resetObject(null, null);
