@@ -6,12 +6,12 @@
     -o-user-select: none;
     width: 4vh !important;
     height: 4vh !important;
-    border: solid DarkSeaGreen;   
+    border: solid DarkSeaGreen;
     max-width: 50px !important;
     max-height: 50px !important;
-
-    display: table-cell;
     float: none;
+    min-height: 4vh !important;
+    min-width: 4vh !important;
 }
 .start {
     background: green;
