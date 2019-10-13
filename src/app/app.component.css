@@ -1,9 +1,4 @@
 .cell{
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
     width: 4vh !important;
     height: 4vh !important;
     border: solid DarkSeaGreen;
